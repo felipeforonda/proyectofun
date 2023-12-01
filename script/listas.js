@@ -570,7 +570,7 @@ const data = [
   },
   {
     id: 48,
-    imagenURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZfnbNI3Jm0nu8pXRZzQC6YpNS_ugksS12A&usqp=CAU",
+    imagenURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZfnbNI3Jmnu8pXRZzQC6YpNS_ugksS12A&usqp=CAU",
     sexo: "mujer",
     tipo_corte: "corte bowl",
     peluquero: "Valeria Sánchez",
@@ -808,19 +808,29 @@ function mostrarmodal(i) {
     console.error("El elemento en la posición " + i + " de data es undefined.");
   }
 }
+
+
+const men = document.getElementById("mensaje");
 function cerrarModal() {
-  // Ocultar el modal
-  const modal = document.getElementById('myModal');
-  modal.classList.remove('modalVisible');
-  modificarmodal();
+  // aqui en esta parte oculto el modal  cuando se cumple la promesa 
+  let mensaje ='';
+  mensaje+= "hasta luego"
+  setTimeout(() => {
+    const modal = document.getElementById('myModal');
+    modal.classList.remove('modalVisible');
+    
+    men.innerHTML = '';
+    
+  }, 1800); //el tiempo lo pongo en milisegunddos 
+  men.innerHTML=mensaje;
 }
 
-
 function modificarmodal() {
-  console.log('Modificando...');
+  
+ 
 
   return new Promise((resolve, reject) => {
-    // Obtener los nuevos valores desde los inputs
+    let mensaje = "";
     const nuevoid = document.getElementById('idp').value;
     const nuevosexo = document.getElementById('sexos').value;
     const nuevocorte = document.getElementById('ticor').value;
@@ -831,7 +841,6 @@ function modificarmodal() {
     const nuevovehi = document.getElementById('transp').value;
     const nuevabarberia = document.getElementById('barberia').value;
 
-    
     if (
       nuevoid === '' ||
       nuevosexo === '' ||
@@ -843,12 +852,10 @@ function modificarmodal() {
       nuevovehi === '' ||
       nuevabarberia === ''
     ) {
-      
       reject('Todos los campos deben estar llenos');
     } else {
-      
       setTimeout(() => {
-        
+        // en esta parte actualizo los datos 
         dataFiltered[indice].id = nuevoid;
         dataFiltered[indice].sexo = nuevosexo;
         dataFiltered[indice].tipo_corte = nuevocorte;
@@ -858,42 +865,39 @@ function modificarmodal() {
         dataFiltered[indice].duracion = tiemponuevo;
         dataFiltered[indice].tipo_transporte = nuevovehi;
         dataFiltered[indice].nombre_barberia = nuevabarberia;
-
         
         resolve('Datos modificados correctamente');
-
         
-        console.log(dataFiltered[indice]);
-        mostrarTabla();
-      }, 1,5); 
+        mensaje += 'rgfdgfdfgd'
+        
+      }, 1000);
     }
-  });
-}
-
-modificarmodal()
-  .then((mensaje) => console.log(mensaje))
-  .catch((error) => console.error(error)); 
-
-function actualizarMensaje(mensaje) {
-  document.getElementById('mensaje').textContent = mensaje;
-}
-
-
-function guardarCambios() {
- 
-  actualizarMensaje('Guardando cambios...');
-
-  modificarmodal()
-    .then((mensaje) => {
       
-      actualizarMensaje(mensaje);
+  });
+  
+}
+
+  
+function guardarcambios() {
+  modificarmodal()
+
+    .then((mensaje) => {
+      console.log(mensaje);
+      men.innerHTML=mensaje
+      mostrarTabla();
+      setTimeout(() => {
+        cerrarModal();
+      }, 1800);
+      
+      
     })
     .catch((error) => {
-      
-      actualizarMensaje(error);
+      console.error();
+      men.innerHTML=error;
     });
 }
 
+  
 
 
 /*function actualizarElemento(index) {
