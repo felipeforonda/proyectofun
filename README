@@ -1,1 +1,183 @@
+¿Qué hace el proyecto?
+El proyecto consiste en tres módulos:
+
+Módulo de Login:
+
+Implementa un formulario de inicio de sesión.
+Realiza la validación de credenciales del usuario.
+Utiliza HTML, CSS y JavaScript para la interfaz y la lógica de autenticación.
+
+Módulo de Visualización de Datos:
+
+Ofrece una tabla interactiva para visualizar datos filtrados.
+Utiliza HTML, CSS y JavaScript para la interfaz y la lógica de visualización.
+Permite filtrar datos y explorar a través de las páginas.
+
+Módulo de Gestión de Cortes:
+
+Facilita la gestión y visualización de datos relacionados con cortes de cabello.
+Utiliza HTML, CSS y JavaScript para la interfaz y la lógica de gestión.
+Permite modificar diferentes datos relacionados con cortes de cabello.
+¿Por qué el proyecto es útil?
+
+Módulo de Login:
+
+Proporciona una forma segura de autenticar a los usuarios.
+Asegura que solo usuarios autorizados accedan a ciertas funciones o datos.
+
+Módulo de Visualización de Datos:
+
+Facilita la exploración y comprensión de conjuntos de datos.
+Permite a los usuarios filtrar datos según sus necesidades.
+
+Módulo de Gestión de Cortes:
+
+Simplifica la gestión de información relacionada con cortes de cabello.
+Permite realizar modificaciones en los datos de manera eficiente.
+¿Cómo pueden comenzar los usuarios con el proyecto?
+
+Módulo de Login:
+
+Abrir el archivo index.html en un navegador web.
+Ingresar el usuario y la contraseña.
+Seguir las instrucciones en la página para la validación.
+
+Módulo de Visualización de Datos:
+
+Abrir el archivo index.html en un navegador web.
+Utilizar los controles de filtrado para ajustar los resultados en la tabla.
+Navegar a través de las páginas para explorar los datos.
+
+Módulo de Gestión de Cortes:
+
+Abrir el archivo index.html en un navegador web.
+Utilizar los controles de gestión para modificar cortes de cabello.
+Visualizar la tabla para ver todos los cortes y aplicar filtros si es necesario.
+¿Dónde pueden recibir ayuda los usuarios con tu proyecto?
+
+Los usuarios pueden recibir ayuda:
+
+Explorando la documentación proporcionada en cada módulo.
+Abriendo problemas (issues) en el repositorio de GitHub si encuentran algún error o tienen preguntas.
+Enviando solicitudes de extracción (pull requests) si desean contribuir al proyecto.
+¿Quién mantiene y contribuye con el proyecto?
+El proyecto fue desarrollado por José Felipe Foronda Gamboa. Cualquier contribución o sugerencia es bienvenida, y los detalles sobre la contribución se pueden encontrar en el archivo de README o en la documentación del proyecto.
+
+--------------------------------------------------------------------------------------------------------------------------------
+# modulo de Login
+
+Este modulo implementa un formulario de inicio de sesión con validación de credenciales del usuario. Utiliza HTML, CSS y JavaScript para la interfaz de usuario y la lógica de autenticación.
+
+## Contenido del Repositorio
+
+- **script/login.js:** Contiene el código JavaScript que maneja la validación de credenciales y la interacción con el formulario.
+- **esty/estilos.css:** Estilos CSS para la presentación del formulario de inicio de sesión.
+- **index.html:** Página principal que contiene el formulario de inicio de sesión.
+
+## Requisitos
+
+- Navegador web compatible con HTML5 y JavaScript.
+
+## Instrucciones de Uso
+
+1. Abre el archivo `index.html` en tu navegador web.
+2. Ingresa el usuario y la contraseña.
+3. El sistema validará las credenciales y mostrará un mensaje de éxito o error.
+
+## Datos de Prueba
+
+El formulario de inicio de sesión utiliza datos de prueba predefinidos:
+
+- Usuario: `felipe@gmail.com`
+- Contraseña: `Pipe12345*`
+
+- Usuario: `cristianlopez@gmail.com`
+- Contraseña: `cris12345`
+
+- Usuario: `lupita@gmail.com`
+- Contraseña: `america1927`
+
+## Validación de Contraseña
+
+La contraseña debe cumplir con ciertos requisitos, incluyendo al menos una mayúscula, una minúscula, un número y un carácter especial.
+
+## Autor
+
+Este proyecto fue desarrollado por jose Felipe foronda gamboa.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Módulo de Visualización de Datos
+
+Este módulo implementa una tabla interactiva para visualizar datos filtrados. Utiliza HTML, CSS y JavaScript para la interfaz de usuario y la lógica de visualización.
+
+## Contenido del Módulo
+
+- **script/visualizacion.js:** Contiene el código JavaScript que maneja la visualización de datos y la interacción con la tabla.
+- **esty/estilos.css:** Estilos CSS para la presentación de la tabla y elementos asociados.
+- **index.html:** Página principal que contiene la tabla y controles de filtrado.
+
+## Requisitos
+
+- Navegador web compatible con HTML5 y JavaScript.
+
+## Instrucciones de Uso
+
+1. Abre el archivo `index.html` en tu navegador web.
+2. Utiliza los controles de filtrado para ajustar los resultados en la tabla.
+3. Navega a través de las páginas para explorar todos los elementos.
+
+## Datos de Prueba
+
+El módulo utiliza datos de prueba predefinidos para la visualización:
+
+- ID: 1, Tipo: "Degradado", Peluquero: "BAKI", Precio Sencillo: 10000, Precio Premium: 50000, Duración: "30 minutos"
+- ID: 2, Tipo: "Corte Clásico", Peluquero: "Juan", Precio Sencillo: 8000, Precio Premium: 40000, Duración: "45 minutos"
+- ...
+
+## Filtrado de Datos
+
+El módulo permite el filtrado de datos por tipo de corte y sexo. Puedes utilizar los controles de filtrado para personalizar los resultados.
+
+## Autor
+
+Este módulo fue desarrollado por jose Felipe foronda gamboa.
+
+## Contribuciones
+
+Contribuciones y sugerencias son bienvenidas. Siéntete libre de abrir un problema o enviar un pull request.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Módulo detalles listas
+
+Este módulo permite la gestión y visualización de datos relacionados con cortes de cabello. Utiliza HTML, CSS y JavaScript para la interfaz de usuario y la lógica de gestión.
+
+Contenido del Módulo
+
+script/gestionCortes.js: Contiene el código JavaScript que maneja la gestión y visualización de los cortes de cabello.
+esty/estilos.css: Estilos CSS para la presentación del módulo y la tabla de cortes.
+index.html: Página principal que contiene la interfaz de gestión y la tabla de cortes.
+Requisitos
+Navegador web compatible con HTML5 y JavaScript.
+Instrucciones de Uso
+Abre el archivo index.html en tu navegador web.
+Utiliza los controles de gestión para modificar cortes de cabello y diferentes datos.
+Visualiza la tabla para ver todos los cortes de cabello y aplica filtros si es necesario.
+Datos de Prueba
+
+El módulo utiliza datos de prueba predefinidos para la gestión y visualización:
+
+ID: 1, Tipo: “Degradado”, Peluquero: “BAKI”, Precio Sencillo: 10000, Precio Premium: 50000, Duración: “30 minutos”
+ID: 2, Tipo: “Corte Clásico”, Peluquero: “Juan”, Precio Sencillo: 8000, Precio Premium: 40000, Duración: “45 minutos”
+…
+Detalles lista
+
+El módulo permite la modificación de diferentes datos.
+
+Autor
+
+Este módulo fue desarrollado por José Felipe foronda gamboa.
+
+Contribuciones
+
+Contribuciones y sugerencias son bienvenidas. Siéntete libre de abrir un problema o enviar un pull request.
 
