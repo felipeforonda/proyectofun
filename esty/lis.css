@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #363434;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-image: url(https://img.freepik.com/fotos-premium/black-tools-of-barber-barber-shop-tijeras-profesionales-cortar-cabello-peluqueria-stright-razor-brocha-afeitar-sobre-fondo-negro_275559-24287.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699574400&semt=ais);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: whitesmoke;
+}
+
+.buque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.buque label {
+    margin: 10px;
+    color: lightgray; /* Cambiar el color del texto predeterminado */
+    transition: color 0.3s ease; /* Agregar una transición suave */
+}
+
+.buque label:hover {
+    color: lightgray; /* Cambiar el color del texto cuando se pasa el cursor */
+}
+
+h1 {
+    color: lightgrey;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+.boton {
+    background-color: rgb(11, 50, 63);
+    color:whitesmoke;
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover,
+.boton:active { /* Se añadió el estilo para el estado :active */
+    background-color: rgb(65, 62, 56);
+}
+
+
+
+
+input[type="text"] {
+    padding: 12px; /* Aumentado el tamaño del padding */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 25%;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease; /* Efecto de transición para el borde */
+}
+.containerc {
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+   background-image: url(https://img.freepik.com/fotos-premium/black-tools-of-barber-barber-shop-tijeras-profesionales-cortar-cabello-peluqueria-stright-razor-brocha-afeitar-sobre-fondo-negro_275559-24287.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699574400&semt=ais);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: whitesmoke;
+}
+
+/* Center the content horizontally */
+.containerc > div {
+    display: inline-block;
+    text-align: left;
+}
+
+/* Center the content vertically */
+.containerc::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* Add these styles to center the buttons */
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button--atras {
+    background-color: #515a79;
+    color: white;
+}
+
+.button--siguiente {
+    background-color: #515a79;
+    color: white;
+}
+
+.button:hover,
+.button:active {
+    background-color: rgb(114, 99, 71);
+}
+
+/* Efecto de hover para el input */
+input[type="text"]:hover {
+    border-color: #4CAF50;
+}
+/* Aquí tus estilos para la tabla */
+
+.modal {
+    display: none; /* Por defecto, el modal no se muestra */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: transform 0.3s ease-out; /* Agregamos una transición para el efecto translate */
+}
+
+/* Estilos base para la tabla */
+/* Estilos base para la tabla */
+/* Estilos base para la tabla */
+.tabla {
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Bordes más suaves */
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(19, 30, 41); /* Fondo más transparente */
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla th {
+    background-color: rgb(11, 50, 63); /* Fondo de encabezado más transparente */
+    color: rgba(255, 255, 255, 0.89); /* Texto blanco para contraste */
+}
+
+.tabla tr:nth-child(even) {
+    background-color: rgb(72, 94, 116); /* Fondo más transparente para filas pares */
+}
+
+/* Estilos para la sección de tablas */
+.tablas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Cambié a 1fr para una sola columna */
+    gap: 20px;
+}
+
+/* Hover sobre las filas de la tabla */
+.tabla tbody tr:hover {
+    background-color: rgb(54, 68, 83); /* Fondo más transparente en hover */
+}
+
+/* Estilo para el modal (si tienes uno) */
+/* ... */
+
+
+
+ 
+.producto {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.modalcontainer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+
+.modalcontenido {
+    background-color: rgb(8, 72, 88);
+    margin: 10% auto;
+    padding: 10px;
+    border: 5px solid #042349;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(182, 16, 16, 0.1);
+    text-align: center;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .modalcontenido {
+        width: 80%;
+    }
+}
+
+/* Style for the product name in the modal */
+.producto {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Style for the product image in the modal */
+.imagenmodel {
+    width: 50%;
+    height: auto;
+    max-height: 200px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Style for the input fields in the modal */
+.inputproduc {
+    width: 80%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for the buttons in the modal */
+.botonmodel {
+    margin: 10px;
+    padding: 15px 20px;
+    font-family: "FS Kim", Georgia, serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Different background color for the close button */
+.botonmodel--cerrar {
+    background-color: #e57373;
+    color: #fff;
+}
+
+/* Different background color for the update button */
+.botonmodel--actualizar {
+    background-color: #81c784;
+    color: #fff;
+}
+
+/* Hover effect for all buttons */
+.botonmodel:hover {
+    background-color: #a83232;
+}
+
+/* Improved styling for the close button */
+.botonmodel--cerrar:hover {
+    background-color: #d32f2f;
+}
+
+/* Improved styling for the update button */
+.botonmodel--actualizar:hover {
+    background-color: #4caf50;
+}
+
+.botonmodel:hover {
+    background-color: #bbb; /* Gris claro */
+}
+
+/* En tu archivo de estilos CSS */
+#myModal {
+    display: none; /* Inicialmente oculto */
+  }
+  
+  .modalVisible {
+    display: block !important; /* Mostrar el modal */
+  }
+  .imagenRedonda{
+    /*border-radius: 50%;*/
+    width: 160px;
+    height: 160px;
+    padding: 5px;
+    border-radius: 30px;
+}

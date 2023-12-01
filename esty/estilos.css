@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image:url(img/fondologin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.lo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    padding: 25px 25px;
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.8);
+    background-image: url(https://img.freepik.com/vector-gratis/suministros-herramientas-peinado-peluqueria-establecen-vista-superior-monocromatica-realista-ilustracion-vector-brocha-afeitar_1284-30216.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    opacity: 0.6;   
+}
+
+
+
+form .titulo{
+    color:black;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+
+form label{
+    margin-top: 35px;
+    opacity: 4.0;  
+}
+
+form .link{
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    
+    font-size: 19px;
+    font-weight: 200;
+    
+}
+
+
+form .buton{
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+
+form .inpu{
+    border-radius: 10px;
+}
+
+.inpu::placeholder{
+    text-align: center;
+}
+
+
+

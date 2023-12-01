@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="esty/lis.css">
+    <title>listado peluqueria</title>
+</head>
+
+<body>
+    <section class="container">
+        <p>filtar por genero </p>
+        <div class="buque">
+            <label class="c">
+                <input type="radio" name="sexo" value="mujer" id="mujer"> mujer 
+            </label>
+            <label class="v">
+                <input type="radio" name="sexo" value="hombre" id="hombre"> hombre
+            </label>
+
+            <h1>filtrar por tipo de corte</h1>
+            <input type="text" id="tipocor" placeholder="Ingresa tu tipo corte">
+        </div>
+        <button class="boton" id="consultar" required="campo obligatoeio">CONSULTAR</button>
+        <button class="boton" id="limpiar">LIMPIAR</button>
+
+
+    </section>
+
+    <section class="tablas">
+        <!-- Tabla 1 -->
+        <table class="tabla" border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>imagen</th>
+                    <th>Tipo de Corte</th>
+                    <th>Peluquero</th>
+                    <th>Precio Corte Sencillo</th>
+                    <th>Precio Corte Premium</th>
+                    <th>Duración</th>
+                    <th>Detalles</th>
+                </tr>
+            </thead>
+            <tbody id="tabla1">
+
+            </tbody>
+        </table>
+
+
+    </section>
+
+    <div id="myModal" class="modalcontainer">
+        <div class="modalcontenido" id="modalContent">
+            <p class="producto">MODIFICAR DETALLES</p>
+            
+            <p class="producto">Foto</p>
+            
+            <img class="imagenmodel" src="URL_DE_LA_IMAGEN" alt="Imagen del producto" id="img">
+            
+            <p class="producto">Id</p>
+            
+            <input class="inputproduc" type="text" value="ID_DEL_PRODUCTO" id="idp" required="este campo es obligatori">
+            
+            <p class="producto">Sexo</p>
+            
+            <input class="inputproduc" type="text" value="sexo" id="sexos"  required="este campo es obligatori">
+            <p class="producto">Tipo corte</p>
+            
+            <input class="inputproduc" type="text" value="tipocorte" id="ticor" required="este campo es obligatori">
+            <p class="producto">peluquero</p>
+            
+            <input class="inputproduc" type="text" value="nombre peluquero" id="pelu" required="este campo es obligatori">
+            <p class="producto">precio corte sencillo</p>
+            <input class="inputproduc" type="text" value="precio" id="sencillo"required="este campo es obligatori"><br>
+            <p class="producto">precio corte premiun</p>
+            <input class="inputproduc" type="text" value="precio" id="premiun" required="este campo es obligatori"><br>
+            <p class="producto">Duraccion</p>
+            <input class="inputproduc" type="text" value="tiempo" id="tiempo"  required="este campo es obligatori"><br>
+            <p class="producto">transporte</p>
+            <input class="inputproduc" type="text" value="transporte" id="transp" required="este campo es obligatori"><br>
+            <p class="producto">barberia</p>
+            <input class="inputproduc" type="text" value="nombre barberia" id="barberia" required="este campo es obligatori"><br>
+           
+    <button class="botonmodel botonmodel--actualizar"  onclick="guardarcambios()">Guardar cambios</button>
+            <!--<button  id="cerrar">Actualizar Producto</button> -->
+            <button class="botonmodel botonmodel--cerrar"  onclick="cerrarModal()">salir</button>
+         <!--   <button class="botonmodel botonmodel--actualizar" id="actualizar">Cerrar Modal</button>-->
+         <p id="mensaje"></p>
+        </div>
+    </div>
+
+
+
+    <section class="containerc">
+       
+    
+        
+        
+        
+            <p class="information" id="informacion-pagina"></p>
+            <p class="information" id="informacion-pagina2"></p>
+    <div class="button-container"> 
+            <button class="button button--atras" id="atras">Anterior</button>
+            <button class="button button--siguiente" id="siguiente">Siguiente</button>
+        </div>
+    
+    </section>
+    <script src="script/listas.js"></script>
+ <!--id: 1,
+    imagenURL: "https://ejemplo.com/pan.png",
+    sexo: "hombre",
+    tipo_corte: "degradado",
+    peluquero: "Andres",
+    preciocortesenciloo: 10000,
+    preciocortepremium: 50000,
+    duracion: "minutos",
+    tipo_transporte: "moto",
+    nombre_barberia: "barber shop" --> 
+</body>
+
+</html>
