@@ -12,7 +12,7 @@ body {
 .container {
     text-align: center;
     padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px #0000004d;
     background-image: url(https://img.freepik.com/fotos-premium/black-tools-of-barber-barber-shop-tijeras-profesionales-cortar-cabello-peluqueria-stright-razor-brocha-afeitar-sobre-fondo-negro_275559-24287.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699574400&semt=ais);
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,12 +30,12 @@ body {
 
 .buque label {
     margin: 10px;
-    color: lightgray; /* Cambiar el color del texto predeterminado */
-    transition: color 0.3s ease; /* Agregar una transición suave */
+    color: lightgray; 
+    transition: color 0.3s ease; 
 }
 
 .buque label:hover {
-    color: lightgray; /* Cambiar el color del texto cuando se pasa el cursor */
+    color: lightgray; 
 }
 
 h1 {
@@ -47,7 +47,7 @@ h1 {
 
 
 .boton {
-    background-color: rgb(11, 50, 63);
+    background-color: #0b323f;
     color:whitesmoke;
     cursor: pointer;
     padding: 12px;
@@ -58,22 +58,27 @@ h1 {
 }
 
 .boton:hover,
-.boton:active { /* Se añadió el estilo para el estado :active */
+.boton:active { 
     background-color: rgb(65, 62, 56);
 }
 
 
-
+input[type="radio"] {
+cursor: pointer;
+}
+input[type="text"]::placeholder{
+    text-align: center;
+}
 
 input[type="text"] {
-    padding: 12px; /* Aumentado el tamaño del padding */
+    padding: 12px; 
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid hsl(0, 0%, 80%);
     border-radius: 5px;
     width: 25%;
     box-sizing: border-box;
     font-size: 14px;
-    transition: border-color 0.3s ease; /* Efecto de transición para el borde */
+    transition: border-color 0.3s ease; 
 }
 .containerc {
     text-align: center;
@@ -93,16 +98,16 @@ input[type="text"] {
     text-align: left;
 }
 
-/* Center the content vertically */
+
 .containerc::before {
     content: "";
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    margin-right: -0.25em; /* Adjusts for spacing */
+    margin-right: -0.25em; 
 }
 
-/* Add these styles to center the buttons */
+
 .button-container {
     margin-top: 20px;
 }
@@ -132,15 +137,13 @@ input[type="text"] {
     background-color: rgb(114, 99, 71);
 }
 
-/* Efecto de hover para el input */
+
 input[type="text"]:hover {
     border-color: #4CAF50;
 }
-/* Aquí tus estilos para la tabla */
 
 .modal {
-    display: none; /* Por defecto, el modal no se muestra */
-    position: fixed;
+    display: none; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -149,17 +152,16 @@ input[type="text"]:hover {
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    transition: transform 0.3s ease-out; /* Agregamos una transición para el efecto translate */
+    transition: transform 0.3s ease-out; 
 }
 
 /* Estilos base para la tabla */
-/* Estilos base para la tabla */
-/* Estilos base para la tabla */
+
 .tabla {
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Bordes más suaves */
+    border: 1px solid rgba(0, 0, 0, 0.1); 
     border-collapse: collapse;
     width: 100%;
-    background-color: rgb(19, 30, 41); /* Fondo más transparente */
+    background-color: #131e29; 
     margin-bottom: 20px;
     color: whitesmoke;
 }
@@ -171,28 +173,28 @@ input[type="text"]:hover {
 }
 
 .tabla th {
-    background-color: rgb(11, 50, 63); /* Fondo de encabezado más transparente */
-    color: rgba(255, 255, 255, 0.89); /* Texto blanco para contraste */
+    background-color: rgb(11, 50, 63); 
+    color: rgba(255, 255, 255, 0.89); 
 }
 
 .tabla tr:nth-child(even) {
-    background-color: rgb(72, 94, 116); /* Fondo más transparente para filas pares */
+    background-color: rgb(72, 94, 116); /
 }
 
 /* Estilos para la sección de tablas */
 .tablas {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Cambié a 1fr para una sola columna */
+    grid-template-columns: repeat(1, 1fr); 
     gap: 20px;
 }
 
-/* Hover sobre las filas de la tabla */
+
 .tabla tbody tr:hover {
-    background-color: rgb(54, 68, 83); /* Fondo más transparente en hover */
+    background-color: rgb(54, 68, 83); 
 }
 
-/* Estilo para el modal (si tienes uno) */
-/* ... */
+/* Estilo para el modal  */
+
 
 
 
@@ -218,32 +220,33 @@ input[type="text"]:hover {
 
 
 .modalcontenido {
-    background-color: rgb(8, 72, 88);
+    background-color: #084858;
     margin: 10% auto;
     padding: 10px;
     border: 5px solid #042349;
     width: 50%;
     max-width: 600px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(182, 16, 16, 0.1);
+    box-shadow: 0 4px 8px #b610101a;
     text-align: center;
+    color: whitesmoke;
 }
 
-/* Responsive styles for smaller screens */
+
 @media (max-width: 768px) {
     .modalcontenido {
         width: 80%;
     }
 }
 
-/* Style for the product name in the modal */
+
 .producto {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-/* Style for the product image in the modal */
+
 .imagenmodel {
     width: 50%;
     height: auto;
@@ -252,7 +255,7 @@ input[type="text"]:hover {
     border-radius: 5px;
 }
 
-/* Style for the input fields in the modal */
+
 .inputproduc {
     width: 80%;
     padding: 5px;
@@ -262,7 +265,6 @@ input[type="text"]:hover {
     box-sizing: border-box;
 }
 
-/* Style for the buttons in the modal */
 .botonmodel {
     margin: 10px;
     padding: 15px 20px;
@@ -277,49 +279,54 @@ input[type="text"]:hover {
     display: inline-block;
 }
 
-/* Different background color for the close button */
+
 .botonmodel--cerrar {
     background-color: #e57373;
     color: #fff;
 }
 
-/* Different background color for the update button */
+
 .botonmodel--actualizar {
     background-color: #81c784;
     color: #fff;
 }
 
-/* Hover effect for all buttons */
+
 .botonmodel:hover {
     background-color: #a83232;
 }
 
-/* Improved styling for the close button */
+
 .botonmodel--cerrar:hover {
     background-color: #d32f2f;
 }
 
-/* Improved styling for the update button */
+
 .botonmodel--actualizar:hover {
     background-color: #4caf50;
 }
 
 .botonmodel:hover {
-    background-color: #bbb; /* Gris claro */
+    background-color: hwb(0 73% 27%); 
 }
 
-/* En tu archivo de estilos CSS */
+
 #myModal {
-    display: none; /* Inicialmente oculto */
+    display: none; 
   }
   
   .modalVisible {
-    display: block !important; /* Mostrar el modal */
+    display: block !important; /
   }
   .imagenRedonda{
-    /*border-radius: 50%;*/
+    
     width: 160px;
     height: 160px;
     padding: 5px;
     border-radius: 30px;
+}
+
+.information {
+    color: #f5deb3;
+    font-weight: bold;
 }
